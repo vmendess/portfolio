@@ -17,30 +17,30 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'vinicius.machado@email.com',
-      href: 'mailto:vinicius.machado@email.com',
-      color: 'from-blue-500 to-cyan-500'
+      value: 'vmendes590@gmail.com',
+      href: 'mailto:vmendes590@gmail.com',
+      color: 'from-primary/20 to-primary/10'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: '/in/viniciusmachado',
-      href: 'https://linkedin.com/in/viniciusmachado',
-      color: 'from-blue-600 to-blue-700'
+      value: '/in/vinicius-machado-11b7a1256',
+      href: 'https://www.linkedin.com/in/vinicius-machado-11b7a1256',
+      color: 'from-secondary/20 to-secondary/10'
     },
     {
       icon: Github,
       label: 'GitHub',
-      value: '@viniciusmachado',
-      href: 'https://github.com/viniciusmachado',
-      color: 'from-gray-700 to-gray-900'
+      value: '@vmendess',
+      href: 'https://github.com/vmendess',
+      color: 'from-accent/20 to-accent/10'
     },
     {
       icon: MapPin,
       label: 'Localização',
-      value: 'São Paulo, SP - Brasil',
+      value: 'Fortaleza, CE - Brasil',
       href: '#',
-      color: 'from-green-500 to-emerald-500'
+      color: 'from-muted/20 to-muted/10'
     }
   ];
 
@@ -114,7 +114,7 @@ const Contact = () => {
                   className="bg-gradient-primary hover:opacity-90 text-primary-foreground flex-1"
                   asChild
                 >
-                  <a href="mailto:vinicius.machado@email.com">
+                  <a href="mailto:vmendes590@gmail.com">
                     <Mail className="h-4 w-4 mr-2" />
                     Enviar Email
                   </a>
@@ -124,7 +124,7 @@ const Contact = () => {
                   className="hover:bg-primary/10 hover:text-primary hover:border-primary/50 flex-1"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/vinicius-machado-11b7a1256" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-4 w-4 mr-2" />
                     LinkedIn
                   </a>

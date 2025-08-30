@@ -17,61 +17,61 @@ const Skills = () => {
     {
       category: 'Cloud & Big Data',
       icon: Cloud,
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-primary/20 to-primary/10',
       skills: [
-        { name: 'AWS Glue', level: 90 },
-        { name: 'Apache Spark', level: 85 },
-        { name: 'AWS Athena', level: 88 },
-        { name: 'Amazon S3', level: 92 },
-        { name: 'Redshift', level: 80 },
-        { name: 'EMR', level: 75 }
+        { name: 'AWS Glue' },
+        { name: 'Apache Spark' },
+        { name: 'AWS Athena' },
+        { name: 'Amazon S3' },
+        { name: 'Lambda' },
+        { name: 'QuickSight' }
       ]
     },
     {
       category: 'Linguagens & Frameworks',
       icon: Code,
-      color: 'from-green-500 to-emerald-500',
+      color: 'from-secondary/20 to-secondary/10',
       skills: [
-        { name: 'Python', level: 95 },
-        { name: 'SQL', level: 90 },
-        { name: 'PySpark', level: 85 },
-        { name: 'Pandas', level: 88 },
-        { name: 'NumPy', level: 82 },
-        { name: 'Dask', level: 70 }
+        { name: 'Python' },
+        { name: 'SQL' },
+        { name: 'Pandas' },
+        { name: 'boto3' },
+        { name: 'PostgreSQL' },
+        { name: 'Git' }
       ]
     },
     {
       category: 'IA & Machine Learning',
       icon: Brain,
-      color: 'from-purple-500 to-pink-500',
+      color: 'from-accent/20 to-accent/10',
       skills: [
-        { name: 'LangChain', level: 88 },
-        { name: 'OpenAI API', level: 85 },
-        { name: 'Hugging Face', level: 78 },
-        { name: 'Prompt Engineering', level: 92 },
-        { name: 'RAG Systems', level: 80 },
-        { name: 'Vector Databases', level: 75 }
+        { name: 'LangChain' },
+        { name: 'OpenAI API' },
+        { name: 'Prompt Engineering' },
+        { name: 'RLHF' },
+        { name: 'AI Agents' },
+        { name: 'LLM Apps' }
       ]
     },
     {
       category: 'DevOps & Tools',
       icon: Container,
-      color: 'from-orange-500 to-red-500',
+      color: 'from-muted/20 to-muted/10',
       skills: [
-        { name: 'Docker', level: 85 },
-        { name: 'Git', level: 90 },
-        { name: 'Linux', level: 82 },
-        { name: 'Airflow', level: 78 },
-        { name: 'Terraform', level: 70 },
-        { name: 'CI/CD', level: 75 }
+        { name: 'Docker' },
+        { name: 'Git' },
+        { name: 'AWS CLI' },
+        { name: 'Linux' },
+        { name: 'DBeaver' },
+        { name: 'PyCharm' }
       ]
     }
   ];
 
   const tools = [
     'AWS Glue', 'Apache Spark', 'Python', 'SQL', 'LangChain', 'Docker',
-    'AWS Athena', 'Pandas', 'NumPy', 'OpenAI', 'Git', 'Linux',
-    'Amazon S3', 'Redshift', 'PySpark', 'Airflow', 'Terraform', 'MLflow'
+    'AWS Athena', 'Pandas', 'boto3', 'OpenAI API', 'Git', 'PostgreSQL',
+    'Amazon S3', 'QuickSight', 'Lambda', 'PyXLSB', 'Difflib', 'DBeaver'
   ];
 
   return (
@@ -93,23 +93,16 @@ const Skills = () => {
             return (
               <Card key={index} className="skill-card p-8 scroll-reveal">
                 <div className="flex items-center mb-6">
-                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${category.color} bg-opacity-20 flex items-center justify-center mr-4`}>
+                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${category.color} flex items-center justify-center mr-4`}>
                     <Icon className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground">{category.category}</h3>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-3">
                   {category.skills.map((skill) => (
-                    <div key={skill.name}>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-sm font-medium text-foreground">{skill.name}</span>
-                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                      </div>
-                      <Progress 
-                        value={skill.level} 
-                        className="h-2 bg-muted"
-                      />
+                    <div key={skill.name} className="text-sm font-medium text-muted-foreground">
+                      {skill.name}
                     </div>
                   ))}
                 </div>
@@ -136,13 +129,13 @@ const Skills = () => {
           </Card>
         </div>
 
-        {/* Additional Stats */}
+        {/* Additional Stats - Ajustado para júnior */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 scroll-reveal">
           {[
-            { icon: Database, number: '50+', label: 'Pipelines ETL' },
-            { icon: Cpu, number: '1TB+', label: 'Dados Processados' },
-            { icon: BarChart3, number: '20+', label: 'Dashboards Criados' },
-            { icon: Workflow, number: '5+', label: 'Arquiteturas Projetadas' }
+            { icon: Database, number: '10+', label: 'Pipelines Desenvolvidos' },
+            { icon: Cpu, number: '1M+', label: 'Registros Processados' },
+            { icon: BarChart3, number: '5+', label: 'Dashboards Criados' },
+            { icon: Workflow, number: '3+', label: 'Projetos AWS' }
           ].map((stat, index) => {
             const Icon = stat.icon;
             return (

@@ -19,20 +19,20 @@ const Index = () => {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Vinícius Machado",
-      "jobTitle": "Engenheiro de Dados",
-      "description": "Especialista em pipelines ETL, AWS Cloud e IA Generativa",
-      "url": "https://viniciusmachado.github.io",
+      "jobTitle": "Engenheiro de Dados Jr.",
+      "description": "Engenheiro de Dados em início de carreira com experiência em pipelines ETL, AWS Cloud e IA Generativa",
+      "url": "https://vmendess.github.io",
       "sameAs": [
-        "https://linkedin.com/in/viniciusmachado",
-        "https://github.com/viniciusmachado"
+        "https://www.linkedin.com/in/vinicius-machado-11b7a1256",
+        "https://github.com/vmendess"
       ],
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "São Paulo",
-        "addressRegion": "SP",
+        "addressLocality": "Fortaleza",
+        "addressRegion": "CE",
         "addressCountry": "Brasil"
       },
-      "alumniOf": "Compass UOL",
+      "alumniOf": "UNI7 - Centro Universitário 7 de Setembro",
       "worksFor": {
         "@type": "Organization",
         "name": "Outlier AI"
@@ -43,8 +43,8 @@ const Index = () => {
         "Python",
         "Apache Spark",
         "LangChain",
-        "Machine Learning",
-        "ETL Pipelines"
+        "ETL Pipelines",
+        "Prompt Engineering"
       ]
     };
 

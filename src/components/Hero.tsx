@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Download, ExternalLink } from 'lucide-react';
+import profilePhoto from '@/assets/profile-photo.png';
 
 const Hero = () => {
   const [text, setText] = useState('');
-  const fullText = 'Engenheiro de Dados | IA Generativa';
+  const fullText = 'Engenheiro de Dados Jr. | IA Generativa';
 
   useEffect(() => {
     let index = 0;
@@ -28,12 +29,14 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Profile Image Placeholder */}
+          {/* Profile Photo */}
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-accent p-1">
-              <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
-                <span className="text-4xl font-bold text-gradient">VM</span>
-              </div>
+            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-border shadow-card">
+              <img 
+                src={profilePhoto} 
+                alt="Vinícius Machado - Engenheiro de Dados" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -51,8 +54,8 @@ const Hero = () => {
           </div>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-            Especialista em pipelines ETL, AWS Cloud e IA Generativa. 
-            Transformo dados complexos em insights valiosos para impulsionar decisões estratégicas.
+            Engenheiro de Dados em início de carreira com experiência em pipelines ETL, 
+            AWS Cloud e IA Generativa. Focado em automação e soluções de dados confiáveis.
           </p>
 
           {/* CTA Buttons */}
@@ -81,18 +84,18 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Stats */}
+          {/* Stats - Ajustado para júnior */}
           <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto mb-16">
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">2+</div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">1+</div>
               <div className="text-sm text-muted-foreground">Anos de Experiência</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">5+</div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">8</div>
               <div className="text-sm text-muted-foreground">Certificações</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">10+</div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">5+</div>
               <div className="text-sm text-muted-foreground">Projetos</div>
             </div>
           </div>
